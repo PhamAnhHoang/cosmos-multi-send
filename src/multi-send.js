@@ -40,5 +40,10 @@ const main = async () => {
     }
 }
 
-main()
+const loopMain = async () => {
+  while (true) {
+      await main()
+  }
+}
 
+loopMain()
